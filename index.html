@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cv numérique</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -14,6 +14,13 @@
         crossorigin="anonymous"></script>
 
     <style>
+        .navbar .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: none;
+        }
+
         .carousel-indicators li {
             width: 1vw;
             height: 1vw;
@@ -52,6 +59,47 @@
                 opacity: 1
             }
         }
+
+        @media screen and (max-width: 992px) {
+            .navbar li {
+                display: none;
+            }
+
+            .addsearch {
+                display: none;
+
+            }
+
+            .navbar .icon {
+
+                float: right;
+                display: block;
+            }
+
+            .navbar.responsive {
+                position: relative;
+                display: block;
+            }
+
+
+            .navbar .responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .responsive {
+                display: block;
+
+                margin-bottom: 20px;
+            }
+
+            .navbar.responsive li {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
     </style>
 </head>
 
@@ -59,8 +107,8 @@
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="images/Logo.jpg" width="40px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="getnav">
+        <a href="#"><img src="images/Logo.jpg" width="40px;"></a>
 
 
         <ul class="navbar-nav ml-auto ">
@@ -77,9 +125,13 @@
                 <a class="nav-link" href="#">Contacts</a>
             </li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
 
     </nav>
-    <div class="carousel slide" data-ride="carousel">
+    <br>
+    <div class="carousel slide col-lg-12" data-ride="carousel">
         <div class=" carousel-inner" data-ride="carousel">
 
             <div class="item fade1 ">
@@ -114,11 +166,112 @@
         </div>
     </div>
 
+
+
+    <br>
+
+
+
+    <div class="row col-lg-12">
+        <div class="col-4">
+            <div><img src="images/pdp.jpeg" style="width:100%; height:100"></div>
+
+        </div>
+        <div class="col-8 card border-dark ">
+            <div id="content">
+                <h1>Hamza ACHCHARIF
+                </h1>
+                <h2>23 ans</h2>
+                <h2>Adresse : HAY EL MAATI RUE AIN LOUH NR 176 SETTAT</h2>
+                <h2>Tel : 0695461254</h2>
+                <h2>Email : Hamza.achcharif@gmail.com</h2>
+                <h2>Élève-Ingénieur en Génie du Logiciels et des Systèmes Informatiques Distribuées
+                    ENSET Mohammedia
+                </h2>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="row col-lg-12">
+        <div class="col-4 ">
+            <div class="card border-dark mb-3">
+
+                <img src="images/competence0.PNG" style="width:100%; height: 15rem;" />
+
+
+                <h3>Création des jeux 2D avec C et SDL2</h3>
+
+
+            </div>
+        </div>
+        <div class="col-4 ">
+            <div class="card border-dark mb-3">
+
+                <img src="images/competence2.jpg" style="width:100%; height: 15rem;" />
+
+
+                <h3>Création d’un site monopage </h3>
+
+
+            </div>
+        </div>
+        <div class="col-4 ">
+            <div class="card border-dark mb-3">
+
+                <img src="images/competence3.jpg" style="width:100%; height: 15rem;" />
+
+
+                <h3>Traitement d'image </h3>
+
+
+            </div>
+        </div>
+
     </div>
 
 
 
 
+
+    <br>
+    <div class="row col-12">
+        <div class="col-6 ">
+
+
+            <iframe style="width: 100%; height: 25rem;" src="https://www.youtube.com/embed/nRR_z9V2xuw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col-6 ">
+            <iframe style="width: 100%; height: 25rem;" src="https://www.youtube.com/embed/3_9DulcG_BM" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="row col-12 ">
+        <div class="col-6 ">
+
+            <iframe style="width: 100%; height: 20rem;"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18929.150432200615!2d-7.625780961876884!3d32.99764109485831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda6055da9429e99%3A0x3f8d5e95dedefa12!2sSettat!5e0!3m2!1sfr!2sma!4v1599829799970!5m2!1sfr!2sma"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-xs-6  ">
+            <form style="padding: 2%; border: 1px solid rgb(141, 138, 138);">
+                <div class="form-group">Email:<input class="input-md form-control" type="text"></div>
+                <div class="form-group">Objet:<input class="input-md form-control" type="text"></div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary btn-block">Envoyer</button>
+            </form>
+        </div>
+    </div>
 
 
 
@@ -155,7 +308,15 @@
             dots[slideIndex - 1].className += " active";
         }
 
-
+        function myFunction() {
+            var x = document.getElementById("getnav");
+            if (x.className === "navbar navbar-expand-lg navbar-dark bg-dark ") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "navbar navbar-expand-lg navbar-dark bg-dark ";
+            }
+        }
 
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
